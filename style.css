@@ -412,6 +412,56 @@ h1{
     font-size: 13px;
 }
 /*Discount-Section*/
+.discount-section{
+    background: linear-gradient(90deg,#396C03,#396c0344);
+    width: 100rem;
+    height:400px;
+}
+.discount-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.discount-info {
+  flex: 1;
+}
+
+.discount-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.discount-info h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.app-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-button img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.discountimg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.discountimg img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*Variety-section*/
 .variety-section{
     background-color: #FFFFFF;
@@ -456,41 +506,6 @@ li img {
   width: 20px;
   height: 20px;
 }
-.instagram-gallery{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 100px;
-    gap: 0.6rem;
-    width: 100%;
-    max-width: 520px;
-    justify-self: center;
-}
-.instagram-gallery li{
-    width: 50%;
-    height: 50%;
-}
-
-.instagram-gallery img{
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    display: flex;
-}
-/*.footer1 ul:last-child{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,auto);
-    gap: 0.5rem;
-}
-.footer1 ul:last-child img{
-    width: 10px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 6px;
-}*/
 .footer1>div ul {
     list-style: none;
     display: flex;
@@ -556,3 +571,37 @@ li img {
     padding-right: 2.5rem;
     gap:2rem
 }
+.instagram-gallery{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.6rem;
+    width: 100%;
+    max-width: 520px;
+    justify-self: center;
+}
+.instagram-gallery li{
+    width: 50%;
+    height: 50%;
+}
+
+.instagram-gallery img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    display: flex;
+}
+/*.footer1 ul:last-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 0.5rem;
+}
+.footer1 ul:last-child img{
+    width: 10px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}*/
