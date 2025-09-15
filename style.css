@@ -202,7 +202,7 @@ body{
     box-shadow: inset 2px 4px 2px var(--color-black);
 }
 /*Our Categories css */
-h4{
+.Categories-section h4{
     color: #396C03;
     font-family: var(--text-font);
     font-weight: 600;
@@ -210,7 +210,7 @@ h4{
     justify-content:center ;
     align-items: center;
 }
-h1{
+.Categories-section h1{
     color: #000;
     font-family: var(--text-font);
     font-weight: 600;
@@ -374,6 +374,9 @@ h1{
     font-family: var(--text-font);
     font-weight: 600;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .team-section h2{
     color: var(--color-black);
