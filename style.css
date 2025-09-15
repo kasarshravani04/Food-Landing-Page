@@ -55,6 +55,7 @@ body{
     font-family: var(--text-font);
     font-size: 1rem;
     font-weight: 500;
+    color: var(--color-white);
 }
 .main-header > nav li:hover{
     font-size: 1.2rem;
@@ -355,6 +356,13 @@ h1{
     color: var(--color-black);
 }
 /*Details-Section*/
+.details-section{
+    color:var(--color-black);
+    padding:0;
+    min-height: 250px;
+}
+
+
 /*Team Section CSS */
 .team-section{
     background-color: #FFFFFF;
@@ -416,6 +424,7 @@ h1{
     background: linear-gradient(90deg,#396C03,#396c0344);
     width: 100rem;
     height:400px;
+    padding: 2rem 0;
 }
 .discount-container {
   display: flex;
@@ -425,42 +434,51 @@ h1{
   margin: auto;
   gap: 2rem;
 }
-
 .discount-info {
   flex: 1;
+  color:var(--color-white);
 }
-
 .discount-info h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 .discount-info h3 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
-
 .app-button {
   display: flex;
   gap: 1rem;
 }
-
 .app-button img {
-  width: 150px;
+  width: 160px;
   cursor: pointer;
 }
-
 .discountimg {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .discountimg img {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .discount-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .discountimg {
+    margin-top: 2rem;
+  }
+
+  .app-buttons {
+    justify-content: center;
+  }
+}
+
 
 /*Variety-section*/
 .variety-section{
