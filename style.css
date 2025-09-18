@@ -25,6 +25,11 @@ body{
     background-color: white;
     color:var(--color-white);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow:1;
 }
 /*header section*/
 .main-header{
@@ -215,10 +220,12 @@ body{
     background-size: cover;
     background-position: 100%;
 }
-
 .main-header nav{
     /* font-size: 40rem; */
     display: none;
+}
+#banner_section{
+    filter: brightness(0.9);
 }
 .banner_content{
     display: flex;
@@ -230,6 +237,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.banner_container h2{
+    line-height: 2rem;
+}
 
 .banner_content>text-with-bg{
     justify-content: center;
@@ -240,56 +250,53 @@ body{
     height: 200px;
 }
 .banner_content p{
-    backdrop-filter:blur(2px);
+    backdrop-filter:blur(3px);
+    line-height: 1.7rem;
 }
-    
+.content_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 @media (width <= 768px) {
-    .main-header .container {
+.main-header .container {
         max-width: 100%;
         padding: 0 1rem;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .main-header > nav ul {
+}
+.main-header > nav ul {
         flex-direction: column;
         gap: 1rem;
         width: 100%;
         margin-top: 1rem;
-    }
-
-    .main-header button {
+}
+.main-header button {
         width: 100%;
         height: 45px;
         margin-top: 1rem;
-    }
-
-    .main-header > nav li select {
+}
+.main-header > nav li select {
         width: 100%;
-    }
-
-    .header-logo img {
+}
+.header-logo img {
         max-height: 40px;
-    }
-
-    .banner_container {
+}
+.banner_container {
         margin-left: 0;
         text-align: center;
-    }
-
-    .banner_content {
+}
+.banner_content {
         flex-direction: column;
         max-width: 100%;
         gap: 2rem;
-    }
-
-    .price,
-    .heading h2 {
+}
+.price,.heading h2 {
         padding-right: 0;
-    }
+}
 }
 /*Our Categories css */
 .Categories-section h4 {
@@ -305,7 +312,6 @@ body{
   font-weight: 600;
   text-align: center;
 }
-
 .categories-list {
   display: flex;
   flex-wrap: wrap;
@@ -313,7 +319,6 @@ body{
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .category-item {
   display: flex;
   flex-direction: column;
@@ -321,7 +326,6 @@ body{
   width:300px;
   text-align: center;
 }
-
 .category-item img {
   width: 250px;       /* fixed box width */
   height: 250px;      /* fixed box height */
@@ -329,14 +333,12 @@ body{
   border-radius: 8px;
   background: #fff;  
 }
-
 .category-item .list-info h3 {
   margin: 0.5rem 0 0.2rem;
   font-size: 24px;
   font-weight: 700;
   color: var(--color-black);
 }
-
 .category-item .list-info h5 {
   margin: 0;
   font-weight: 600;
@@ -346,18 +348,16 @@ body{
 
 /* Responsive */
 @media (width <= 768px) {
-  .categories-list {
+.categories-list {
     gap: 1.5rem;
-  }
-
-  .category-item {
+}
+.category-item {
     width: 45%; /* 2 items per row */
-  }
-
-  .category-item img {
+}
+.category-item img {
     width: 90%;
     height: auto;
-  }
+}
 }
 
 @media (max-width: 480px) {
