@@ -24,6 +24,7 @@
 body{
     background-color: white;
     color:var(--color-white);
+    min-height: 100vh;
 }
 /*header section*/
 .main-header{
