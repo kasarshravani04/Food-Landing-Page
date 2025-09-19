@@ -621,9 +621,6 @@ main{
   }
 }
 
-
-
-
 /*Team Section CSS */
 .team-section{
     background-color: #FFFFFF;
@@ -733,7 +730,10 @@ main{
   /* cursor: pointer; */
 }
 @media (width <= 768px) {
-  .discount-container {
+    .discount-section{
+         padding: 4rem 2rem;
+    }
+    .discount-container {
     flex-direction: column;
     text-align: center;
   }
@@ -844,6 +844,22 @@ main{
     height: 100%;
     object-fit: cover;
     display: flex;
+}
+@media(width <= 768px){
+    div{
+        margin-top: 2rem;
+    }
+    .footer1{
+        font-size: 0.7em;
+        gap: 2.5rem;
+    }
+    .email{
+        width:20em;
+        margin-top: 1rem;
+    }
+    li img{
+        height:1rem;
+    }
 }
 
 .footer2{
