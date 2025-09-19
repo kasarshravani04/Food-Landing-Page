@@ -356,7 +356,11 @@ main{
 }
 .category-item img {
     width: 90%;
-    height: auto;
+   /* height: auto;*/
+}
+.category-item h3 h5{
+    font-size: 5rem;
+    font-weight: 700;
 }
 }
 
@@ -365,8 +369,6 @@ main{
     width: 100%; /* 1 item per row */
   }
 }
-
-
 /*About us css*/
 .aboutus-section{
     background-color: var(--background-color);
@@ -422,6 +424,12 @@ main{
     object-fit: contain;
     position: relative;
 }
+@media(width <= 768px){
+    .aboutus-container{
+        gap: 2rem;
+    }
+}
+
 /*outlets-section css*/
 .outlets-section{
     background-color: var(--background-color2);
