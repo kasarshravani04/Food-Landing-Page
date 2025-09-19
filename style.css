@@ -122,7 +122,10 @@ main{
     left: 0;
     width: 100%;
     z-index: 2;
+    fill: white;
+    /* background: white; */
 }
+
 
 .banner_overlay{
     position:absolute;
@@ -752,12 +755,17 @@ main{
 .variety-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 }
 .lists img{
     margin-top: 0.8rem;
+}
+@media(width <=768px){
+    .variety-container{
+        justify-content: space-between;
+    }
 }
 /*Footer CSS */
 .footer1 {
@@ -791,6 +799,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 0.4em;
+}
+input{
+    width:250px;
 }
 .email{
     display: flex;
@@ -860,15 +871,21 @@ main{
     li img{
         height:1rem;
     }
+    .instagram-gallery img{
+        height: 5rem;
+    }
+    .footer2{
+        font-size: 1rem;
+    }
 }
 
 .footer2{
     background-color: var(--footer-color2);
     color: var(--color-white);
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 1rem 1rem;
 }
 .footer2>div{
    display: flex;
